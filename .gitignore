@@ -1,0 +1,4 @@
+.DS_Store
+/models/core
+/models/llama.log
+/models/*.llamafile
