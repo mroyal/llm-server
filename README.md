@@ -13,8 +13,8 @@ Make sure you have `docker` and `docker-compose` on your machine. The model is w
 1. **Clone the repository**
 
     ```
-    git clone https://github.com/<username>/<repository-name>.git
-    cd <repository-name>
+    git clone git@github.com:mroyal/llm-server.git llm-server
+    cd llm-server
     ```
 
 2. **Start the service**
