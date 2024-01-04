@@ -5,6 +5,7 @@ URL="https://huggingface.co/jartine/mistral-7b.llamafile/resolve/main/mistral-7b
 FILENAME="mistral-7b-instruct-v0.1-Q4_K_M-server.llamafile"
 
 echo Downloading file
+mkdir -p /models
 if [ ! -f "/models/$FILENAME" ]; then
     wget -O "/models/$FILENAME" $URL
 fi

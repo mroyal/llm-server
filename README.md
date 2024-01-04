@@ -12,17 +12,31 @@ Make sure you have `docker` and `docker-compose` on your machine. The model is w
 
 1. **Clone the repository**
 
-    ```
+    ```shell
     git clone git@github.com:mroyal/llm-server.git llm-server
     cd llm-server
     ```
 
-2. **Start the service**
+2. **Download the model**
 
+    Optionally, download the Mistral 7B model and put it in the `models` directory inside the repository.
+
+    ```shell
+    wget https://huggingface.co/jartine/mistral-7b.llamafile/resolve/main/mistral-7b-instruct-v0.1-Q4_K_M-server.llamafile -O models/mistral-7b-instruct-v0.1-Q4_K_M-server.llamafile
     ```
+
+3. **Start the service**
+
+    Docker:
+    ```shell
     docker-compose up --build
     ```
+   
+    Kubernetes:
+    ```shell
+    kubectl apply -f k8s
+    ```
 
-3. **Profit**
+4. **Profit**
 
-   Navigate to http://127.0.0.1:8080/ and have fun!
+   Navigate to http://127.0.0.1:8080/ (Docker) or http://127.0.0.1:<port> (from `kubectl get services`) and have fun!
