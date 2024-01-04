@@ -19,7 +19,7 @@ Make sure you have `docker` and `docker-compose` on your machine. The model is w
 
 2. **Download the model**
 
-    Optionally, download the Mistral 7B model and put it in the `models` directory inside the repository.
+    Optionally, download the Mistral 7B model and put it in the `models` directory inside the repository. If you download it, it will be saved to your Docker image. Otherwise, each container will attempt the download as your service boots.
 
     ```shell
     wget https://huggingface.co/jartine/mistral-7b.llamafile/resolve/main/mistral-7b-instruct-v0.1-Q4_K_M-server.llamafile -O models/mistral-7b-instruct-v0.1-Q4_K_M-server.llamafile
