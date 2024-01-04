@@ -20,11 +20,3 @@ spec:
         imagePullPolicy: Never
         ports:
         - containerPort: 8080
-# Local only
-#        volumeMounts:
-#        - name: models
-#          mountPath: /models
-#      volumes:
-#      - name: models
-#        hostPath:
-#          path: /Users/mroyal/Sites/mroyal/ai/local-ai/models
