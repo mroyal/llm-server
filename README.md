@@ -39,4 +39,4 @@ Make sure you have `docker` and `docker-compose` on your machine. The model is w
 
 4. **Profit**
 
-   Navigate to http://127.0.0.1:8080/ (Docker) or http://127.0.0.1:<port> (from `kubectl get services`) and have fun!
+   Navigate to http://127.0.0.1:8080/ (Docker) or http://127.0.0.1:PORT (retrieve PORT from `kubectl get services`) and have fun!
